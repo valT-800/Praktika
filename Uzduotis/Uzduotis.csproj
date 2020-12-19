@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{113B0C05-6EBA-4D05-8218-5BF9CAB6A4A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Uzduotis</RootNamespace>
+    <AssemblyName>Uzduotis</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frontend\Controllers\AdminControllers\AdminAddSubjectController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frontend\Controllers\AdminControllers\AdminAddSubjectController.Designer.cs">
+      <DependentUpon>AdminAddSubjectController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Controllers\AdminControllers\AdminGradesController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frontend\Controllers\AdminControllers\AdminGradesController.Designer.cs">
+      <DependentUpon>AdminGradesController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\Users\Admin.cs" />
+    <Compile Include="Backend\Users\Lecturer.cs" />
+    <Compile Include="Backend\Users\User.cs" />
+    <Compile Include="Frontend\Controllers\AdminControllers\AdminAddGrupeController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frontend\Controllers\AdminControllers\AdminAddGrupeController.Designer.cs">
+      <DependentUpon>AdminAddGrupeController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Controllers\AdminControllers\AdminChangeGradeController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frontend\Controllers\AdminControllers\AdminChangeGradeController.Designer.cs">
+      <DependentUpon>AdminChangeGradeController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Controllers\AdminControllers\AdminLecturersController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frontend\Controllers\AdminControllers\AdminLecturersController.Designer.cs">
+      <DependentUpon>AdminLecturersController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Controllers\AdminControllers\AdminLecturerSubjectsController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frontend\Controllers\AdminControllers\AdminLecturerSubjectsController.Designer.cs">
+      <DependentUpon>AdminLecturerSubjectsController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Controllers\LecturerControllers\LecturerAddGradeController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frontend\Controllers\LecturerControllers\LecturerAddGradeController.Designer.cs">
+      <DependentUpon>LecturerAddGradeController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Controllers\StudentControllers\StudentGradesController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frontend\Controllers\StudentControllers\StudentGradesController.Designer.cs">
+      <DependentUpon>StudentGradesController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Forms\AdminForms\AdminAddLecturerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\AdminForms\AdminAddLecturerForm.Designer.cs">
+      <DependentUpon>AdminAddLecturerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Forms\AdminForms\AdminAddStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\AdminForms\AdminAddStudentForm.Designer.cs">
+      <DependentUpon>AdminAddStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Forms\AdminForms\AdminGradesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\AdminForms\AdminGradesForm.Designer.cs">
+      <DependentUpon>AdminGradesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Forms\AdminForms\AdminGrupesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\AdminForms\AdminGrupesForm.Designer.cs">
+      <DependentUpon>AdminGrupesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Forms\AdminForms\AdminLecturerSubjectsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\AdminForms\AdminLecturerSubjectsForm.Designer.cs">
+      <DependentUpon>AdminLecturerSubjectsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Forms\LecturerForms\LecturerGradesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\LecturerForms\LecturerGradesForm.Designer.cs">
+      <DependentUpon>LecturerGradesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Forms\LecturerForms\LecturerSubjectsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\LecturerForms\LecturerSubjectsForm.Designer.cs">
+      <DependentUpon>LecturerSubjectsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Forms\StudentForms\StudentSubjecsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\StudentForms\StudentSubjecsForm.Designer.cs">
+      <DependentUpon>StudentSubjecsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Forms\AdminForms\AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\AdminForms\AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\Users\Student.cs" />
+    <Compile Include="Backend\Models\Grade.cs" />
+    <Compile Include="Backend\Models\Grupe.cs" />
+    <Compile Include="Backend\Models\Subject.cs" />
+    <Compile Include="Backend\Models\Global.cs" />
+    <Compile Include="Frontend\Controllers\UserControllers\UserProfileController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frontend\Controllers\UserControllers\UserProfileController.Designer.cs">
+      <DependentUpon>UserProfileController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Backend\Repositories\ItemRepository\ItemsRepository.cs" />
+    <Compile Include="Backend\Repositories\UserRepository\UserRepository.cs" />
+    <Compile Include="Frontend\Controllers\UserControllers\UserPasswordChangeController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frontend\Controllers\UserControllers\UserPasswordChangeController.Designer.cs">
+      <DependentUpon>UserPasswordChangeController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Forms\UserForms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\UserForms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Forms\LecturerForms\LecturerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\LecturerForms\LecturerForm.Designer.cs">
+      <DependentUpon>LecturerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Controllers\LecturerControllers\LecturerGradesController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Frontend\Controllers\LecturerControllers\LecturerGradesController.Designer.cs">
+      <DependentUpon>LecturerGradesController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Frontend\Forms\StudentForms\StudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Forms\StudentForms\StudentForm.Designer.cs">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Frontend\Controllers\AdminControllers\AdminAddSubjectController.resx">
+      <DependentUpon>AdminAddSubjectController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Controllers\AdminControllers\AdminGradesController.resx">
+      <DependentUpon>AdminGradesController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Controllers\AdminControllers\AdminAddGrupeController.resx">
+      <DependentUpon>AdminAddGrupeController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Controllers\AdminControllers\AdminChangeGradeController.resx">
+      <DependentUpon>AdminChangeGradeController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Controllers\AdminControllers\AdminLecturersController.resx">
+      <DependentUpon>AdminLecturersController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Controllers\AdminControllers\AdminLecturerSubjectsController.resx">
+      <DependentUpon>AdminLecturerSubjectsController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Controllers\LecturerControllers\LecturerAddGradeController.resx">
+      <DependentUpon>LecturerAddGradeController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Controllers\StudentControllers\StudentGradesController.resx">
+      <DependentUpon>StudentGradesController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\AdminForms\AdminAddLecturerForm.resx">
+      <DependentUpon>AdminAddLecturerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\AdminForms\AdminAddStudentForm.resx">
+      <DependentUpon>AdminAddStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\AdminForms\AdminGradesForm.resx">
+      <DependentUpon>AdminGradesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\AdminForms\AdminGrupesForm.resx">
+      <DependentUpon>AdminGrupesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\AdminForms\AdminLecturerSubjectsForm.resx">
+      <DependentUpon>AdminLecturerSubjectsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\LecturerForms\LecturerGradesForm.resx">
+      <DependentUpon>LecturerGradesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\LecturerForms\LecturerSubjectsForm.resx">
+      <DependentUpon>LecturerSubjectsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\StudentForms\StudentSubjecsForm.resx">
+      <DependentUpon>StudentSubjecsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\AdminForms\AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Controllers\UserControllers\UserProfileController.resx">
+      <DependentUpon>UserProfileController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\UserForms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\LecturerForms\LecturerForm.resx">
+      <DependentUpon>LecturerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Controllers\LecturerControllers\LecturerGradesController.resx">
+      <DependentUpon>LecturerGradesController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Frontend\Controllers\UserControllers\UserPasswordChangeController.resx">
+      <DependentUpon>UserPasswordChangeController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontend\Forms\StudentForms\StudentForm.resx">
+      <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ProfilePicture.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
