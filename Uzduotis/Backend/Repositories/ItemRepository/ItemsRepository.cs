@@ -14,9 +14,7 @@ namespace Uzduotis.Repositories.ItemRepository
 
 		public ItemsRepository()
 		{
-			connection = new SqlConnection(@"Data Source=204.17.199.171,1433;Network Library=DBMSSOCN;Initial Catalog=academic;Integrated Security=True");
-
-			//connection = new SqlConnection(@"Server=LAPTOP-1VDJU9IG;Database=academic;Integrated Security=True");
+			connection = new SqlConnection(@"Server=LAPTOP-1VDJU9IG;Database=academic;Integrated Security=True");
 		}
 		public List<Subject> GetGrupeSubjects(int grupeId)
 		{

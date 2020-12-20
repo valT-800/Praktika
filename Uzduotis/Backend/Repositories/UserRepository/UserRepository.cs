@@ -17,10 +17,7 @@ namespace Uzduotis.Data
 
 		public UserRepository()
 		{
-			connection = new SqlConnection(@"Server=204.17.199.171;Database=academic;Integrated Security=True");
-			connection = new SqlConnection(@"Data Source=204.17.199.171,1433;Network Library=DBMSSOCN;Initial Catalog=academic;User ID=Vali;Password=myPassword;");
-
-			//connection = new SqlConnection(@"Server=LAPTOP-1VDJU9IG;Database=academic;Integrated Security=True");
+			connection = new SqlConnection(@"Server=LAPTOP-1VDJU9IG;Database=academic;Integrated Security=True");
 		}
 		public void Login(string username, string password)
 		{
